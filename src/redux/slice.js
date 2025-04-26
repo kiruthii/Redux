@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+const initialState1 = {
   name: "",
   age: 0,
   email: "",
@@ -8,7 +8,7 @@ const initialState = {
 
 export const userDetailsSlice = createSlice({
   name: "userDetails",
-  initialState,
+  initialState=initialState1,
   reducers: {
     setName: (state, action) => {
       state.name = action.payload;
